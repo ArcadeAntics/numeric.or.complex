@@ -1,6 +1,6 @@
 
 
-setClassUnion(
+methods::setClassUnion(
     name    = "numeric_or_complex",
     members = c("numeric", "complex")
 )
@@ -19,7 +19,7 @@ as.numeric_or_complex.default <- function (x, strict = TRUE, ...)
         return(numeric(0))
     if (!is.numeric_or_complex(x))
         x <- as.complex(x, ...)
-    if (!is.complex(x) || essentials::as.boolean(strict) && all(is.na(x) | Im(x) == 0))
+    if (!is.complex(x) || strict && all(is.na(x) | Im(x) == 0))
         as.numeric(x, ...)
     else as.complex(x, ...)
 
