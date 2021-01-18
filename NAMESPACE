@@ -3,10 +3,8 @@
 exportClass(numeric_or_complex)
 
 
-export(as.numeric_or_complex, is.numeric_or_complex)
+export(as.numeric_or_complex, as.numeric_or_complex.default,
+    is.numeric_or_complex)
 
 
-S3method(as.numeric_or_complex, character)
-S3method(as.numeric_or_complex, complex)
 S3method(as.numeric_or_complex, default)
-S3method(as.numeric_or_complex, ts)
