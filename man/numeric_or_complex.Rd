@@ -28,8 +28,8 @@ names. The default method for \code{as.numeric_or_complex} first coerces its
 argument to type complex, then coerces to type numeric if all elements are
 either missing values or have no imaginary component.
 
-\code{is.numeric_or_complex} returns TRUE or FALSE depending on whether its
-argument is of numeric or complex type or not.
+\code{is.numeric_or_complex} returns \code{TRUE} or \code{FALSE} depending on
+whether its argument is of numeric or complex type or not.
 }
 \seealso{
 \code{\link[base]{double}}, \code{\link[base]{numeric}},
